@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for post in posts %}
+        <h1>{{ post.title }}</h1>
+        <br>
+        <div>{{ post.text }}</div>
+    {% endfor %}
+    <form action="/tak_blet">
+        <input type="text" name="log">
+        <input type="text" name="pas">
+        <input type="submit" value="LOL">
+    </form>
+</body>
+</html>
